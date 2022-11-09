@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- JavaScript Part -->
+
+
+
+        
+        <style>
+
+            body{
+
+                background-color: lightgray;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            * {box-sizing: border-box;}
+
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+
+            input[type=submit] {
+              background-color: #04AA6D;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+              background-color: #45a049;
+            }
+
+            .container {
+              border-radius: 5px;
+              background-color: #f2f2f2;
+              padding: 20px;
+            }
+        </style>
+
+    </head>
+
+    <!---->
+
+    <body>
+
+    <!--On fait la bare de navigation pour la page Home-->
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Seconde Chance</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="Home.html">Home</a></li> 
+
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Who are we.html">Who are we ?</a></li>
+                        <li><a href="What do we do.html">What do we do ?</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Products.html">Our Products</a></li>
+                        <li><a href="Events.html">Events</a></li>
+                        <li><a href="News.html">News</a></li>
+                    </ul>
+            
+                </li>
+      
+                <li class="active"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+        
+
+<!--PHP POUR ENVOYER Formulaire-->
+
+
+
+
+<!-- -------------------------------------------------------------- -->
+        <div class="container">
+          <form action="http://vip.groupehn.com:20003/html/infospost.php" method="POST">
+
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input class="form-control" id="lastname" type="text" name="lastname" />
+            <div class="form-group">
+
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input class="form-control" id="firstname" type="text" name="firstname" />
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" id="mail" type="email" name="email" placeholder="yourmail@yahoo.com" />
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Request</label>
+                <textarea class="form-control" name="request" id="request" cols="66" rows="10"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select class="form-control" id="country" name="country">
+
+                  <option value="Afghanistan">Afghanistan</option>
+                  <option value="Algeria">Algeria</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Armenia">Armenia</option>
+                  <option value="Belgium">Belgium</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Denmark">Denmark</option>
+                  <option value="Egypt">Egypt</option>
+                  <option value="Finland">Finland</option>
+                  <option value="France">France</option>
+                  <option value="Greece">Greece</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Japan">Japan</option>
+                  <option value="South Korea">South Korea</option>
+                  <option value="Vietnam">Vietnam</option>
+
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-default">Submit</button> 
+
+          </form>
+        </div>
+
+    </body>
+</html>

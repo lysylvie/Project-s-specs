@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Seconde Chance</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- JavaScript Part -->
+
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#myBtn").click(function(){
+                    $("#myModal").modal("show");   //use the proper bootstrap funtion here
+                });
+            });
+
+
+        </script>
+
+    <style>
+
+        body{
+
+            background-color: lightgray;
+
+        }
+    
+
+    </style>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#myBtn").click(function(){
+                    $("#modal1").modal("show");   //use the proper bootstrap funtion here
+                });
+
+                $(".modal2-close").click(function(){
+                    $("#modal2");   //use the proper bootstrap funtion here
+                });
+
+
+                $('[data-toggle="tooltip"]');   //use the proper bootstrap funtion here
+
+                $('[data-toggle="popover"]');   //use the proper bootstrap funtion here
+            });
+
+
+        </script>
+        
+
+    </head>
+
+    <!---->
+
+    <body>
+
+    <!--On fait la bare de navigation pour la page Home-->
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Seconde Chance</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li> 
+
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Who are we.html">Who are we ?</a></li>
+                        <li><a href="What do we do.html">What do we do ?</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Products.html">Our Products</a></li>
+                        <li><a href="Events.html">Events</a></li>
+                        <li><a href="News.html">News</a></li>
+                    </ul>
+            
+                </li>
+      
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="jumbotron text-center">
+        <h1>Welcome to Second Chance!</h1>
+        <p>Where your books can find a second life</p>
+    </div>
+  
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Column 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column 3</h3>        
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+        </div>
+    </div>
+
+            <!-- Dans la partie qui suit, c'est pour avoir une fenetre qui s'ouvre pour nous dire d'aller dans contact pour avoir de l'aide-->
+
+            <div class="container">
+
+                <button type="submit" class="btn btn-default btn-info" id="myBtn">Help ?</button>
+
+                <div class="modal fade" id="myModal" role="dialog">
+                    
+                    <div class="modal-dialog">
+
+                        <div class="modal-content">
+                            
+                            <div class="modal-header">
+                                
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Message</h4>                            
+
+                            </div>
+                            
+                            <div class="modal-body">
+                                
+                                <p> Go to the section <a href="Contact.html">Contact</a> for any help you need <p>
+
+                            </div>    
+
+                            <div class="modal-footer">
+                                
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                            </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+    </body>
+</html>
